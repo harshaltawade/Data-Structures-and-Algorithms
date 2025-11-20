@@ -270,6 +270,141 @@ public class Patterns {
             System.out.println();
         }
     }
+
+    public static void pattern19(int n){
+        int i=1;
+        int j=1;
+        while(i<=n){
+            while(j<i){
+                System.out.print(" ");
+                j++;
+            }
+            while(j<=n){
+                System.out.print(i);
+                j++;
+            }
+            i++;
+            j=1;
+            System.out.println();
+        }
+    }
+
+    public static void pattern20(int n){
+        int i=1;
+        int j=1;
+        while(i<=n){
+            while(j<=(n-i)){
+                System.out.print(" ");
+                j++;
+            }
+            while(j<=n){
+                System.out.print(i);
+                j++;
+            }
+            i++;
+            j=1;
+            System.out.println();
+        }
+    }
+
+    public static void pattern21(int n){
+        int i=1;
+        int j=1;
+        while(i<n){
+            while(j<i){
+                System.out.print(" ");
+                j++;
+            }
+            while(j<=n){
+                System.out.print(j);
+                j++;
+            }
+            i++;
+            j=1;
+            System.out.println();
+        }
+    }
+
+    public static void pattern22(int n){
+        int i=1;
+        int j=1;
+        int count=1;
+        while(i<=n){
+            while(j<=(n-i)){
+                System.out.print(" ");
+                j++;
+            }
+            while(j<=n){
+                System.out.print(count);
+                count++;
+                j++;
+            }
+            i++;
+            j=1;
+            System.out.println();
+        }
+    }
+
+    public static void pattern23(int n){
+        int i=1;
+        int j=1;
+        int count=0;
+        while(i<=n){
+            while(j<=(n-i)){
+                System.out.print("_");
+                j++;
+            }
+            while(j<=n){
+                count++;
+                System.out.print(count);
+                j++;
+            }
+            j--;
+            count--;
+            while(count>0){
+                System.out.print(count);
+                count--;
+                j--;
+            }
+            while(j>1){
+                System.out.print("_");
+                j--;
+            }
+            i++;
+            j=1;
+            count=0;
+            System.out.println();
+        }
+    }
+
+    public static void pattern24(int n){
+        int i=1;
+        int j=1;
+        while(i<=n){
+            while(j<=(n-i+1)){
+                System.out.print(j);
+                j++;
+            }
+            while(j<=n){
+                System.out.print("*");
+                j++;
+            }
+            int t=1;
+            j--;
+            while(t<=(i-1)){
+                System.out.print("*");
+                j--;
+                t++;
+            }
+            while(j>0){
+                System.out.print(j);
+                j--;
+            }
+            i++;
+            j=1;
+            System.out.println();
+        }
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number :  ");
@@ -292,6 +427,12 @@ public class Patterns {
         // pattern15(n);
         // pattern16(n);
         // pattern17(n);
-        pattern18(n);
+        // pattern18(n);
+        // pattern19(n);
+        // pattern20(n);
+        // pattern21(n);
+        // pattern22(n);
+        // pattern23(n);
+        pattern24(n);
     }
 }
